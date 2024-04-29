@@ -1,0 +1,22 @@
+.header-container {
+  background: #c197ba;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-container-image {
+  max-width: 80px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-item {
+  list-style: none;
+}
