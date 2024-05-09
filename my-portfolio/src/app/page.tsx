@@ -10,7 +10,7 @@ export default function Home() {
         <div className="home-container">
           <div className="home-infocard">
             <div className="infocard-links">
-              <h2 className="infocard-title">Dev Portfólio</h2>
+              <h2 className="infocard-title">Fernanda Guimarães</h2>
               <p className="infocard-text">
                 Olá! Seja bem vindo(a) ao meu portfólio! Cheque o meu currículo
                 clicando no botão a baixo, se preferir.
