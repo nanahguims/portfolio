@@ -1,6 +1,11 @@
 .home-infocard {
   min-height: 400px;
-  background-image: url("../../public/images/infocard.png");
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   display: flex;
   align-items: center;
 }
@@ -8,18 +13,17 @@
 .infocard-links {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .infocard-title {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 600;
 }
 
 .infocard-text {
   max-width: 500px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -32,9 +36,33 @@
   color: white;
 }
 
+@media (min-width: 610px) {
+  .infocard-links {
+    padding-left: 30px;
+  }
+}
+
 @media (max-width: 609px) {
   .home-infocard {
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
+    flex-direction: column;
+  }
+  .infocard-title {
+    font-size: 30px;
+  }
+
+  .infocard-links {
+    align-items: center;
+    text-align: center;
+  }
+
+  .infocard-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .infocard-image img {
+    border-radius: 100%;
   }
 }
