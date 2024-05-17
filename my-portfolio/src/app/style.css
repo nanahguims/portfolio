@@ -36,6 +36,27 @@
   color: white;
 }
 
+.technologys-container,
+.experience-container {
+  max-width: 1252px;
+  margin: 0 auto 30px auto;
+}
+
+.technologys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.h3-title {
+  margin: 50px 0;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+
 @media (min-width: 610px) {
   .infocard-links {
     padding-left: 30px;
@@ -64,5 +85,9 @@
 
   .infocard-image img {
     border-radius: 100%;
+  }
+
+  .technologys {
+    justify-content: center;
   }
 }

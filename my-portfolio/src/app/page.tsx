@@ -24,6 +24,48 @@ export default function Home() {
               <button className="infocard-button">CV</button>
             </div>
           </div>
+          <div className="technologys-container ">
+            <h3 className="technologys-title h3-title">Tecnologias</h3>
+            <div className="technologys">
+              <img src="/typescript.svg" alt="" />
+              <img src="/css.svg" alt="" />
+              <img src="/html.svg" alt="" />
+              <img src="/sass.svg" alt="" />
+              <img src="/js.svg" alt="" />
+              <img src="/react.svg" alt="" />
+              <img src="/next.js.svg" alt="" />
+            </div>
+          </div>
+
+          <div className="experience-container">
+            <h3 className="experience-title h3-title">Experiência</h3>
+            <div>
+              <div>
+                <img src="/web-developer.svg" alt="" />
+                <h4 className="experience-name">Web Developer</h4>
+                <p className="experience-description">
+                  Execução de projetos utilizando a plataforma VTEX.IO como:
+                  Fila, PenseFarma, Kopenhagen e Mizuno.
+                </p>
+              </div>
+              <div>
+                <img src="/aprendiz-suporte.svg" alt="" />
+                <h4 className="experience-name">Aprendiz Suporte</h4>
+                <p className="experience-description">
+                  This is a template Figma file, turned into code using Anima.
+                  Learn more at AnimaApp.com
+                </p>
+              </div>
+              <div>
+                <img src="/aprendiz-backend.svg" alt="" />
+                <h4 className="experience-name">Aprendiz Back-end</h4>
+                <p className="experience-description">
+                  This is a template Figma file, turned into code using Anima.
+                  Learn more at AnimaApp.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
