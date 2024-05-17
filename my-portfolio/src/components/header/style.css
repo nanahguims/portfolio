@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: 609px) {
+@media (max-width: 465px) {
   .header-container-image {
     border-bottom: 1px solid white;
   }

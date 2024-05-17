@@ -19,9 +19,9 @@ export default function Home() {
                 Fernanda Guimarães Santana, sou desenvolvedora a mais ou menos 3
                 anos, tenho experiência sólida no front-end, principalmente
                 utilizando o ReactJS. Se quiser saber mais de forma prática ↪
-                cheque o meu currículo clicando no botão a baixo ↓
+                cheque o meu currículo clicando no botão a baixo.
               </p>
-              <button className="infocard-button">CV</button>
+              <button className="infocard-button">cv_fernanda_guimaraes</button>
             </div>
           </div>
           <div className="technologys-container ">
@@ -33,33 +33,32 @@ export default function Home() {
               <img src="/sass.svg" alt="" />
               <img src="/js.svg" alt="" />
               <img src="/react.svg" alt="" />
-              <img src="/next.js.svg" alt="" />
+              <img src="/nextjs.svg" alt="" />
             </div>
           </div>
-
           <div className="experience-container">
             <h3 className="experience-title h3-title">Experiência</h3>
-            <div>
-              <div>
+            <div className="experience">
+              <div className="experience-div">
                 <img src="/web-developer.svg" alt="" />
-                <h4 className="experience-name">Web Developer</h4>
-                <p className="experience-description">
+                <h4 className="experience-name h4-title">Web Developer</h4>
+                <p className="experience-description paragraph-text">
                   Execução de projetos utilizando a plataforma VTEX.IO como:
                   Fila, PenseFarma, Kopenhagen e Mizuno.
                 </p>
               </div>
-              <div>
+              <div className="experience-div">
                 <img src="/aprendiz-suporte.svg" alt="" />
-                <h4 className="experience-name">Aprendiz Suporte</h4>
-                <p className="experience-description">
+                <h4 className="experience-name h4-title">Aprendiz Suporte</h4>
+                <p className="experience-description paragraph-text">
                   This is a template Figma file, turned into code using Anima.
                   Learn more at AnimaApp.com
                 </p>
               </div>
-              <div>
+              <div className="experience-div">
                 <img src="/aprendiz-backend.svg" alt="" />
-                <h4 className="experience-name">Aprendiz Back-end</h4>
-                <p className="experience-description">
+                <h4 className="experience-name h4-title">Aprendiz Back-end</h4>
+                <p className="experience-description paragraph-text">
                   This is a template Figma file, turned into code using Anima.
                   Learn more at AnimaApp.com
                 </p>
