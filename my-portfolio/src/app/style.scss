@@ -1,39 +1,28 @@
-.h3-title {
-  margin: 50px 0;
-  @include titleConfig();
-}
-
-.h4-title {
-  @include titleConfig($font-size: 28px);
-}
-
-.paragraph-text {
-  @include textConfig($text-align: center);
-}
-
-
 .home-infocard {
   min-height: 400px;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  display: flex;
-  align-items: center;
+  @include linearGradient();
+  @include flexLayout();
+
+  @include breakpoint($mobile-md, max) {
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+  }
 }
 
 .infocard {
   &-links {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $gap;
+
+    @include breakpoint($mobile-md, min) {
+      padding-left: 30px;
+    }
   }
 
   &-title {
-    font-size: 35px;
-    font-weight: 600;
+    @include titleConfig($font-size: 35px, $text-align: left);
   }
 
   &-text {
@@ -41,71 +30,11 @@
     @include textConfig($font-weight: $font-semibold);
   }
 
-  &-button  {
+  &-button {
     @include primaryButton();
   }
-}
 
-.technologys-container,
-.experience-container {
-  max-width: 1252px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ccc;
-}
-
-.technologys {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  &-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 350px;
-    gap: 20px;
-  }
-
-  img {
-    max-width: 130px;
-  }
-}
-
-@media (min-width: 610px) {
-  .infocard-links {
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .technologys {
-    justify-content: center;
-  }
-
-  .experience {
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 609px) {
-  .home-infocard {
-    justify-content: center;
-    padding: 25px;
-    flex-direction: column;
-  }
-  .infocard {
+  @include breakpoint($mobile-md, max) {
     &-title {
       font-size: 30px;
     }
@@ -123,5 +52,39 @@
         border-radius: 100%;
       }
     }
+  }
+}
+
+.technologys-container,
+.experience-container {
+  @include containerConfig();
+}
+
+.technologys {
+  @include flexLayout(flex, row, space-between, center, wrap);
+  flex-wrap: wrap;
+
+  @include breakpoint($tablet-lg, max) {
+    justify-content: center;
+  }
+}
+
+.experience {
+  @include flexLayout(flex, row, space-between, center, wrap);
+
+  &-div {
+    @include flexLayout(flex, column, left, center, nowrap);
+    text-align: center;
+    max-width: 350px;
+    gap: $gap;
+  }
+
+  img {
+    max-width: 130px;
+  }
+
+  @include breakpoint($tablet-lg, max) {
+    justify-content: center;
+    gap: $gap;
   }
 }

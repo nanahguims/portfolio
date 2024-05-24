@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.h3-title {
+  margin: 50px 0;
+  @include titleConfig();
+}
+
+.h4-title {
+  @include titleConfig($font-size: 28px);
+}
+
+.paragraph-text {
+  @include textConfig($text-align: center);
+}

@@ -1,21 +1,64 @@
+// colors
 $primary-color: #a11e56;
 $secondary-color: #3f3346;
 $white: #ffff;
 
-
+// font-weight
 $font-light: 300;
 $font-regular: 400;
 $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
 
+$gap: 20px;
+
+// Breakpoints
+$mobile-xs: 320px;
+$mobile-sm: 480px;
+$mobile-md: 610px;
+$tablet-sm: 768px;
+$tablet-md: 900px;
+$tablet-lg: 1024px;
+$laptop-sm: 1280px;
+$laptop-md: 1366px;
+$laptop-lg: 1440px;
+$desktop-sm: 1600px;
+$desktop-md: 1920px;
+$desktop-lg: 2560px;
+$ultrawide: 3440px;
+
+@mixin breakpoint($width, $type: min) {
+  @if $type == min {
+    @media (min-width: $width) {
+      @content;
+    }
+  } @else if $type == max {
+    @media (max-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin linearGradient() {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
 
 @mixin sizeConfig($width: auto, $height: auto) {
   width: $width;
   height: $height;
 }
 
-@mixin textConfig($font-size: 20px, $font-weight: $font-medium, $text-align: left, $color: $secondary-color) {
+@mixin textConfig(
+  $font-size: 20px,
+  $font-weight: $font-medium,
+  $text-align: left,
+  $color: $secondary-color
+) {
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
@@ -37,4 +80,29 @@ $font-bold: 700;
   color: $white;
 
   @include textConfig($color: $white, $font-size: 18px, $text-align: center);
+}
+
+@mixin containerConfig(
+  $max-width: 1252px,
+  $padding-bottom: 40px,
+  $border-bottom: 1px solid #ccc
+) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-bottom: $padding-bottom;
+  border-bottom: $border-bottom;
+}
+
+@mixin flexLayout(
+  $display: flex,
+  $flex-direction: row,
+  $justify-content: left,
+  $align-items: center,
+  $flex-wrap: nowrap
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
 }

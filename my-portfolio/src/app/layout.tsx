@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
 const jost = Jost({ subsets: ["latin"] });
 
