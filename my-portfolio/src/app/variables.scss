@@ -1,0 +1,16 @@
+$primary-color: #a11e56;
+$secondary-color: #3f3346;
+
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+
+@mixin textConfig($font-weight: $font-medium) {
+  font-size: 20px;
+  font-weight: $font-weight;
+  color: $secondary-color;
+}

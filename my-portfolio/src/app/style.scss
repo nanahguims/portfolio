@@ -1,3 +1,4 @@
+
 .home-infocard {
   min-height: 400px;
   background: rgb(238, 174, 202);
@@ -10,30 +11,31 @@
   align-items: center;
 }
 
-.infocard-links {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+.infocard {
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.infocard-title {
-  font-size: 35px;
-  font-weight: 600;
-}
+  &-title {
+    font-size: 35px;
+    font-weight: 600;
+  }
 
-.infocard-text {
-  max-width: 920px;
-  font-size: 20px;
-  font-weight: 500;
-}
+  &-text {
+    max-width: 920px;
+    @include textConfig($font-weight: $font-semibold);
+  }
 
-.infocard-button {
-  background: #a11e56;
-  height: 45px;
-  border-radius: 30px;
-  width: 100%;
-  max-width: 200px;
-  color: white;
+  &-button  {
+    background: #a11e56;
+    height: 45px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 200px;
+    color: white;
+  }
 }
 
 .technologys-container,
