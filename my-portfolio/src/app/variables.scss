@@ -1,5 +1,6 @@
 $primary-color: #a11e56;
 $secondary-color: #3f3346;
+$white: #ffff;
 
 
 $font-light: 300;
@@ -9,8 +10,31 @@ $font-semibold: 600;
 $font-bold: 700;
 
 
-@mixin textConfig($font-weight: $font-medium) {
-  font-size: 20px;
+@mixin sizeConfig($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin textConfig($font-size: 20px, $font-weight: $font-medium, $text-align: left, $color: $secondary-color) {
+  font-size: $font-size;
   font-weight: $font-weight;
+  color: $color;
+  text-align: $text-align;
+}
+
+@mixin titleConfig($font-size: 32px, $text-align: center) {
+  font-size: $font-size;
+  text-align: $text-align;
+  font-weight: $font-semibold;
   color: $secondary-color;
+}
+
+@mixin primaryButton($max-width: 200px) {
+  background: $primary-color;
+  @include sizeConfig(100%, 45px);
+  border-radius: 30px;
+  max-width: $max-width;
+  color: $white;
+
+  @include textConfig($color: $white, $font-size: 18px, $text-align: center);
 }

@@ -1,3 +1,16 @@
+.h3-title {
+  margin: 50px 0;
+  @include titleConfig();
+}
+
+.h4-title {
+  @include titleConfig($font-size: 28px);
+}
+
+.paragraph-text {
+  @include textConfig($text-align: center);
+}
+
 
 .home-infocard {
   min-height: 400px;
@@ -29,12 +42,7 @@
   }
 
   &-button  {
-    background: #a11e56;
-    height: 45px;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 200px;
-    color: white;
+    @include primaryButton();
   }
 }
 
@@ -54,41 +62,24 @@
   gap: 20px;
 }
 
-.h3-title {
-  margin: 50px 0;
-  font-weight: 600;
-  font-size: 32px;
-  text-align: center;
-}
-
-.h4-title {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.paragraph-text {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .experience {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
 
-.experience-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 350px;
-  gap: 20px;
-}
+  &-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+    gap: 20px;
+  }
 
-.experience img {
-  max-width: 130px;
+  img {
+    max-width: 130px;
+  }
 }
 
 @media (min-width: 610px) {
@@ -114,21 +105,23 @@
     padding: 25px;
     flex-direction: column;
   }
-  .infocard-title {
-    font-size: 30px;
-  }
+  .infocard {
+    &-title {
+      font-size: 30px;
+    }
 
-  .infocard-links {
-    align-items: center;
-    text-align: center;
-  }
+    &-links {
+      align-items: center;
+      text-align: center;
+    }
 
-  .infocard-image {
-    max-width: 200px;
-    margin-bottom: 20px;
-  }
+    &-image {
+      max-width: 200px;
+      margin-bottom: 20px;
 
-  .infocard-image img {
-    border-radius: 100%;
+      img {
+        border-radius: 100%;
+      }
+    }
   }
 }

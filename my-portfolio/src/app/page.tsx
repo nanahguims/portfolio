@@ -22,7 +22,7 @@ export default function Home() {
                 utilizando o ReactJS. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão a baixo.
               </p>
-              <button className="infocard-button">cv_fernanda_guimaraes</button>
+              <button className="infocard-button">cv_fernanda</button>
             </div>
           </div>
           <div className="technologys-container ">
