@@ -1,0 +1,44 @@
+.header {
+  &-container {
+    background: $primary-color;
+    @include flexLayout(flex, row, center, center, wrap);
+    padding: $padding;
+    gap: $gap;
+    @include textConfig(
+      $font-size: 18px,
+      $color: $white,
+      $font-weight: $font-regular
+    );
+
+    @include breakpoint($tablet-lg, min) {
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      color: $white;
+      gap: $gap;
+
+      @include breakpoint(465px, max) {
+        border-bottom: 1px solid white;
+      }
+
+      img {
+        margin-bottom: 10px;
+        max-width: 60px;
+      }
+    }
+  }
+
+  &-nav {
+    @include flexLayout(flex, row, space-between, center, nowrap);
+    gap: $gap;
+  }
+
+  &-item {
+    list-style: none;
+    color: $white;
+  }
+}

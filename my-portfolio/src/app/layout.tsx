@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
-import "./globals.scss";
+import "../styles/globals.scss";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -22,10 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={jost.className}>
-        <link rel="icon" href="./favicon.ico" />
-        {children}
-      </body>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body className={jost.className}>{children}</body>
     </html>
   );
 }

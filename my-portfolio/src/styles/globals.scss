@@ -17,6 +17,11 @@
   @include titleConfig($font-size: 28px);
 }
 
+.subtitle {
+  @include textConfig($text-align: center);
+  margin: 10px 0;
+}
+
 .paragraph-text {
   @include textConfig($text-align: center);
 }

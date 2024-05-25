@@ -11,6 +11,9 @@ $font-semibold: 600;
 $font-bold: 700;
 
 $gap: 20px;
+$gap-md: 40px;
+$padding: 20px;
+$padding-md: 40px;
 
 // Breakpoints
 $mobile-xs: 320px;
@@ -54,7 +57,7 @@ $ultrawide: 3440px;
 }
 
 @mixin textConfig(
-  $font-size: 20px,
+  $font-size: 18px,
   $font-weight: $font-medium,
   $text-align: left,
   $color: $secondary-color
@@ -65,11 +68,15 @@ $ultrawide: 3440px;
   text-align: $text-align;
 }
 
-@mixin titleConfig($font-size: 32px, $text-align: center) {
+@mixin titleConfig(
+  $font-size: 32px,
+  $text-align: center,
+  $color: $secondary-color
+) {
   font-size: $font-size;
   text-align: $text-align;
   font-weight: $font-semibold;
-  color: $secondary-color;
+  color: $color;
 }
 
 @mixin primaryButton($max-width: 200px) {

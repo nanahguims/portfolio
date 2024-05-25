@@ -1,0 +1,37 @@
+.footer {
+  &-container {
+    background: $primary-color;
+    @include flexLayout(flex, column, center, center, wrap);
+    padding: $padding-md;
+    gap: $gap;
+
+    .socialmedia {
+      @include flexLayout($justify-content: center, $flex-wrap: wrap);
+      gap: $gap;
+      &-container {
+        @include flexLayout($flex-wrap: wrap);
+        gap: $gap-md;
+
+        @include breakpoint($tablet-lg, max) {
+          justify-content: center;
+          gap: $gap;
+        }
+      }
+    }
+
+    img {
+      max-width: 50px;
+    }
+  }
+  &-title {
+    color: $white;
+    margin: 0;
+  }
+  &-text {
+    color: $white;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
