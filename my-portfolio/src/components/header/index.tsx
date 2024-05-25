@@ -12,17 +12,17 @@ export default function Header() {
         <div>
           <nav className="header-nav">
             <li className="header-item">
-              <a className="header-link" href="http://">
+              <a className="header-link" href="#sobre">
                 Sobre
               </a>
             </li>
             <li className="header-item">
-              <a className="header-link" href="http://">
+              <a className="header-link" href="#experience">
                 Experiência
               </a>
             </li>
             <li className="header-item">
-              <a className="header-link" href="http://">
+              <a className="header-link" href="#contact">
                 Contato
               </a>
             </li>

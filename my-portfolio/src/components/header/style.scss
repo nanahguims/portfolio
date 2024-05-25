@@ -1,5 +1,10 @@
 .header {
   &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     background: $primary-color;
     @include flexLayout(flex, row, center, center, wrap);
     padding: $padding;
@@ -26,8 +31,7 @@
       }
 
       img {
-        margin-bottom: 10px;
-        max-width: 60px;
+        max-width: 50px;
       }
     }
   }
