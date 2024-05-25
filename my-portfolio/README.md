@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Portfólio 🩷
 
-## Getting Started
+Bem-vindo ao meu portfólio! Aqui você encontrará um pouco sobre mim, minhas competências, experiências, etc.
+## Tecnologias Utilizadas 🛠️
 
-First, run the development server:
+- [Next.js](https://nextjs.org/) - O Next.js é um framework de React que me permitiu criar este portfólio de forma eficiente, com roteamento fácil, renderização do lado do servidor e outras funcionalidades avançadas.
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript é uma linguagem de programação que estende o JavaScript adicionando tipos estáticos opcionais. Ele me ajudou a escrever um código mais seguro e legível.
+- [Sass](https://sass-lang.com/) - Sass é uma linguagem de extensão CSS que me permitiu escrever estilos mais poderosos e modulares para este projeto.
+
+## Como Executar o Projeto ▶️
+
+Siga estas instruções para executar o projeto em sua máquina local:
+
+1. **Clone o repositório:**
+
+```bash
+git clone https://github.com/annythingelse/portfolio.git
+```
+
+2. **Instale as dependências:**
+
+```bash
+cd seu-projeto
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Acesse o projeto no navegador:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Abra seu navegador e acesse `http://localhost:3000` para visualizar o projeto.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Estrutura do Projeto 📂
 
-## Learn More
+Aqui está uma visão geral da estrutura de pastas do projeto:
 
-To learn more about Next.js, take a look at the following resources:
+```
+meu-projeto/
+├── components/
+├── pages/
+├── public/
+├── styles/
+├── README.md
+├── next.config.js
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **`components/`**: Contém os componentes React reutilizáveis utilizados no projeto.
+- **`pages/`**: Contém as páginas React que são renderizadas pelo Next.js.
+- **`public/`**: Contém arquivos estáticos, como imagens e ícones, acessíveis publicamente.
+- **`styles/`**: Contém arquivos Sass para estilos adicionais.
+- **`README.md`**: Este arquivo! Documentação do projeto.
+- **`next.config.js`**: Configurações adicionais do Next.js.
+- **`package.json`**: Arquivo de manifesto do Node.js que lista as dependências do projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contribuição 🙌
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se encontrar algum problema ou enviar um pull request com melhorias.
