@@ -5,4 +5,6 @@ module.exports = {
     includePaths: [path.join(__dirname, "src/styles")],
     prependData: `@import 'variables.scss';`,
   },
+  output: "export",
+  basePath: "/portfolio",
 };
