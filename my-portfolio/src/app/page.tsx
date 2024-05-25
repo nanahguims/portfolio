@@ -11,7 +11,7 @@ export default function Home() {
         <div className="home-container">
           <section className="home-infocard">
             <div className="infocard-image">
-              <img src="/images/annythingelse.jpg" alt="annythingelse" />
+              <img src="./images/annythingelse.jpg" alt="annythingelse" />
             </div>
             <div className="infocard-links">
               <h2 className="infocard-title">Front-end Developer</h2>
@@ -34,12 +34,12 @@ export default function Home() {
           <section className="technologys-container ">
             <h3 className="technologys-title h3-title">Hard Skills</h3>
             <div className="technologys">
-              <img src="/icons/typescript.svg" alt="" />
-              <img src="/icons/sass.svg" alt="" />
-              <img src="/icons/js.svg" alt="" />
-              <img src="/icons/react.svg" alt="" />
-              <img src="/icons/vtex.svg" alt="" />
-              <img src="/icons/nextjs.svg" alt="" />
+              <img src="./icons/typescript.svg" alt="" />
+              <img src="./icons/sass.svg" alt="" />
+              <img src="./icons/js.svg" alt="" />
+              <img src="./icons/react.svg" alt="" />
+              <img src="./icons/vtex.svg" alt="" />
+              <img src="./icons/nextjs.svg" alt="" />
             </div>
           </section>
           <section id="experience" className="experience-container">
@@ -73,7 +73,7 @@ export default function Home() {
           <section id="education" className="education-container">
             <h3 className="education-title h3-title">Formação</h3>
             <div className="education-div">
-              <img src="/images/education.png" alt="" />
+              <img src="./images/education.png" alt="" />
               <div className="education-description">
                 <h4 className="education-name h4-title">
                   Bacharelado Interdiciplinar em Ciência e Tecnologia

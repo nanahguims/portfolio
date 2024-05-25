@@ -9,25 +9,25 @@ export default function Footer() {
           <h3 className="footer-title h3-title"> Entre em contato</h3>
           <div className="socialmedia">
             <a href="https://github.com/annythingelse/" target="_blank">
-              <img src="/images/github.png" alt="" />
+              <img src="./images/github.png" alt="" />
             </a>
             <a href="mailto:fernandadev0202@gmail.com">
-              <img src="/images/email.png" alt="" />
+              <img src="./images/email.png" alt="" />
             </a>
             <a
               href="https://www.linkedin.com/in/fernanda-guimar%C3%A3es-santana/"
               target="_blank"
             >
-              <img src="/images/linkedin.png" alt="" />
+              <img src="./images/linkedin.png" alt="" />
             </a>
             <a href="https://www.instagram.com/nanahguims" target="_blank">
-              <img src="/images/instagram.png" alt="" />
+              <img src="./images/instagram.png" alt="" />
             </a>
             <a
               href="https://api.whatsapp.com/send?phone=5548988528045"
               target="_blank"
             >
-              <img src="/images/whatsapp.png" alt="" />
+              <img src="./images/whatsapp.png" alt="" />
             </a>
           </div>
         </div>
