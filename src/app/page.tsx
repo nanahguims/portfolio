@@ -3,6 +3,7 @@ import Header from "../components/header/";
 import Footer from "@/components/footer";
 import "./style.scss";
 import { History } from "@/components/accordion/content";
+
 export default function Home() {
   return (
     <>
