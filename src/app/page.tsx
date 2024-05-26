@@ -125,7 +125,7 @@ export default function Home() {
                     mais me aprofundar no que me identifico. <br /> Como
                     estudante, quero me desenvolver profissionalmente sempre em
                     busca de inovar e trazer bons resultados, sou proativa e bem
-                    detalista, e como sempre eu digo, não há nada que eu não sei
+                    detalhista, e como sempre eu digo, não há nada que eu não sei
                     que eu não possa aprender e descobrir.
                   </p>
                 </div>
