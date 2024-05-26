@@ -1,0 +1,24 @@
+.accordion {
+  &-container {
+    padding: 20px 0;
+    @include containerConfig($max-width: $tablet-md);
+  }
+
+  &-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  &-title {
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid $gray;
+    @include flexLayout($justify-content: space-between);
+    @include titleConfig($font-size: 20px, $text-align: left);
+    user-select: none;
+  }
+
+  &-content {
+    padding-top: 10px;
+  }
+}

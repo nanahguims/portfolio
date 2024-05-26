@@ -41,10 +41,6 @@
     width: 100%;
   }
 
-  &-button {
-    @include primaryButton();
-  }
-
   @include breakpoint($mobile-md, max) {
     &-title {
       font-size: 30px;
@@ -64,12 +60,6 @@
       }
     }
   }
-}
-
-.technologys-container,
-.experience-container,
-.education-container {
-  @include containerConfig();
 }
 
 .technologys {
@@ -119,6 +109,10 @@
 }
 
 .education {
+  &-container {
+    border-bottom: 0;
+  }
+
   &-title {
     margin-bottom: 25px;
   }
@@ -148,9 +142,65 @@
     max-width: 400px;
   }
 
-  &-name,
-  &-university,
-  &-text {
+  &-name {
     text-align: left;
+  }
+}
+
+.sobre {
+  background: $light-pink;
+  padding-top: 5px;
+  &-container {
+    border-bottom: 0;
+    &-photo {
+      img {
+        @include sizeConfig(195px);
+        border: 1px solid $secondary-color;
+      }
+    }
+
+    &-bio {
+      max-width: 515px;
+    }
+  }
+
+  &-div {
+    @include flexLayout($justify-content: center);
+    gap: $gap-md;
+
+    @include breakpoint($tablet-lg, max) {
+      padding: 0 20px;
+      @include flexLayout(
+        $flex-direction: column,
+        $justify-content: center,
+        $align-items: center
+      );
+    }
+  }
+
+  &-button {
+    margin-top: 10px;
+    max-width: 100px;
+  }
+}
+
+.history {
+  &-title {
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  &-container {
+    @include breakpoint(1252px, max) {
+      padding: 0 20px;
+    }
+
+    @include breakpoint($tablet-lg, max) {
+      @include flexLayout(
+        $flex-direction: column,
+        $justify-content: center,
+        $align-items: flex-start
+      );
+    }
   }
 }

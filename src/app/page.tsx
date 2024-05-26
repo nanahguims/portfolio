@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/header/";
 import Footer from "@/components/footer";
 import "./style.scss";
-
+import { History } from "@/components/accordion/content";
 export default function Home() {
   return (
     <>
@@ -27,11 +27,11 @@ export default function Home() {
                 href="https://www.canva.com/design/DAGEdID2D-c/HPas-G49TvoFK4N1cacEqw/edit?utm_content=DAGEdID2D-c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 target="_blank"
               >
-                <button className="infocard-button"> cv_fernanda</button>
+                <button className="default-button"> cv_fernanda</button>
               </a>
             </div>
           </section>
-          <section className="technologys-container ">
+          <section className="technologys-container default-container ">
             <h3 className="technologys-title h3-title">Hard Skills</h3>
             <div className="technologys">
               <img src="./icons/typescript.svg" alt="" />
@@ -42,7 +42,10 @@ export default function Home() {
               <img src="./icons/nextjs.svg" alt="" />
             </div>
           </section>
-          <section id="experience" className="experience-container">
+          <section
+            id="experience"
+            className="experience-container default-container"
+          >
             <h3 className="experience-title h3-title">Experiência</h3>
             <div className="experience">
               <div className="experience-div">
@@ -70,7 +73,10 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section id="education" className="education-container">
+          <section
+            id="education"
+            className="education-container default-container"
+          >
             <h3 className="education-title h3-title">Formação</h3>
             <div className="education-div">
               <img src="./images/education.png" alt="" />
@@ -86,6 +92,49 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </section>
+          <div id="sobre" className="sobre">
+            <section className="sobre-container default-container">
+              <h3 className="sobre-title h3-title">Um pouco sobre mim</h3>
+              <div className="sobre-div">
+                <div className="sobre-container-photo">
+                  <img src="./images/me.png" alt="" />
+                  <p className="subtitle">
+                    <strong> Nanda</strong>
+                  </p>
+                  <p className="paragraph-text">19 anos</p>
+                  <p className="paragraph-text">
+                    Jogo favorito: Stardew Valley
+                  </p>
+                  <a
+                    className="sobre-link"
+                    href="https://annythingelse.github.io/my-history/"
+                    target="_blank"
+                  >
+                    <button className="sobre-button default-button">
+                      ver mais
+                    </button>
+                  </a>
+                </div>
+                <div className="sobre-container-bio">
+                  <p className="sobre-text paragraph-text">
+                    <strong>bio</strong> <br />
+                    Comecei minha carreira no mundo da programação aos 16 anos,
+                    desde então o meu foco foi aprimorar minhas habilidades,
+                    especialmente conhecendo de tudo um pouco, para cada vez
+                    mais me aprofundar no que me identifico. <br /> Como
+                    estudante, quero me desenvolver profissionalmente sempre em
+                    busca de inovar e trazer bons resultados, sou proativa e bem
+                    detalista, e como sempre eu digo, não há nada que eu não sei
+                    que eu não possa aprender e descobrir.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section className="history-container default-container">
+            <h4 className="history-title h4-title">Minha História</h4>
+            <History />
           </section>
         </div>
         <Footer />
