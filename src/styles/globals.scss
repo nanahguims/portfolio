@@ -8,6 +8,10 @@
   }
 }
 
+.default-container {
+  @include containerConfig();
+}
+
 .h3-title {
   margin: 50px 0;
   @include titleConfig();
@@ -18,10 +22,14 @@
 }
 
 .subtitle {
-  @include textConfig($text-align: center);
+  @include textConfig();
   margin: 10px 0;
 }
 
 .paragraph-text {
-  @include textConfig($text-align: center);
+  @include textConfig();
+}
+
+.default-button {
+  @include primaryButton();
 }
