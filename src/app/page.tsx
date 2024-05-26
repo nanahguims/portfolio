@@ -17,11 +17,11 @@ export default function Home() {
             <div className="infocard-links">
               <h2 className="infocard-title">Front-end Developer</h2>
               <p className="infocard-text">
-                Olá Mundo! Seja bem vindo(a) ao meu portfólio! Meu nome é
-                Fernanda Guimarães Santana, sou desenvolvedora a mais ou menos 3
-                anos, tenho experiência sólida no front-end, principalmente
+                Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
+                Fernanda Guimarães Santana, sou desenvolvedora há mais ou menos 3
+                anos e tenho experiência sólida no front-end, principalmente
                 utilizando o ReactJS. Se quiser saber mais de forma prática ↪
-                cheque o meu currículo clicando no botão a baixo.
+                cheque o meu currículo clicando no botão abaixo.
               </p>
               <a
                 className="infocard-link"
@@ -53,7 +53,7 @@ export default function Home() {
                 <h4 className="experience-name h4-title">Avanti</h4>
                 <p className="subtitle"> 09/2021 - 07/2023</p>
                 <p className="experience-description paragraph-text">
-                  Execução de projetos utilizando a plataforma VTEX.IO como:
+                  Desenvolvimento de projetos utilizando a plataforma VTEX.IO como:
                   Fila, PenseFarma, Kopenhagen e Mizuno.
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
                   </p>
                   <a
                     className="sobre-link"
-                    href="https://annythingelse.github.io/my-history/"
+                    href="https://www.linkedin.com/in/fernanda-guimar%C3%A3es-santana/"
                     target="_blank"
                   >
                     <button className="sobre-button default-button">
@@ -121,12 +121,12 @@ export default function Home() {
                   <p className="sobre-text paragraph-text">
                     <strong>bio</strong> <br />
                     Comecei minha carreira no mundo da programação aos 16 anos,
-                    desde então o meu foco foi aprimorar minhas habilidades,
+                    desde então o meu foco tem sido aprimorar minhas habilidades,
                     especialmente conhecendo de tudo um pouco, para cada vez
                     mais me aprofundar no que me identifico. <br /> Como
-                    estudante, quero me desenvolver profissionalmente sempre em
-                    busca de inovar e trazer bons resultados, sou proativa e bem
-                    detalista, e como sempre eu digo, não há nada que eu não sei
+                    estudante, quero me desenvolver profissionalmente, sempre em
+                    busca de inovar e trazer bons resultados. Sou proativa e bem
+                    detalhista, e como sempre eu digo: não há nada que eu não sei
                     que eu não possa aprender e descobrir.
                   </p>
                 </div>
