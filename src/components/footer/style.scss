@@ -20,15 +20,31 @@
     }
 
     img {
-      max-width: 50px;
+      max-width: 30px;
     }
   }
   &-title {
-    color: $white;
     margin: 0;
+    @include textConfig(
+      $font-size: 18px,
+      $color: $white,
+      $font-weight: $font-regular
+    );
+
+    @include breakpoint($tablet-lg, max)  {
+      text-align: center;
+    }
   }
   &-text {
-    color: $white;
+    @include textConfig(
+      $font-size: 18px,
+      $color: $white,
+      $font-weight: $font-regular
+    );
+
+    @include breakpoint($tablet-lg, max)  {
+      text-align: center;
+    }
 
     a {
       text-decoration: underline;
