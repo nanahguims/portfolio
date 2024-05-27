@@ -53,7 +53,7 @@ export default function Home() {
                 <h4 className="experience-name h4-title">Avanti</h4>
                 <p className="subtitle"> 09/2021 - 07/2023</p>
                 <p className="experience-description paragraph-text">
-                  Desenvolvimento de projetos utilizando a plataforma VTEX.IO como:
+                  Desenvolvimento de sites de e-commerce utilizando a plataforma VTEX.IO como:
                   Fila, PenseFarma, Kopenhagen e Mizuno.
                 </p>
               </div>
