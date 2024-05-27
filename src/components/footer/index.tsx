@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <div id="contact" className="footer-container">
         <div className="socialmedia-container">
-          <h3 className="footer-title h3-title"> Entre em contato</h3>
+          <h3 className="footer-title"> Entre em contato: </h3>
           <div className="socialmedia">
             <a href="https://github.com/annythingelse/" target="_blank">
               <img src="./images/github.png" alt="" />
@@ -31,10 +31,10 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className="footer-text paragraph-text">
+        <p className="footer-text">
           Layout totalmente desenvolvido por Fernanda Guimarães Santana
         </p>
-        <p className="footer-text paragraph-text">
+        <p className="footer-text">
           Link do Repositório:{" "}
           <a href="https://github.com/annythingelse/portfolio" target="_blank">
             github

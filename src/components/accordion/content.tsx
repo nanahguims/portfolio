@@ -3,7 +3,7 @@ import Accordion from "@/components/accordion";
 
 const accordionItems = [
   {
-    title: "Quem sou eu? 🩷",
+    title: "Quem sou eu? ❤️",
     content:
       "Bom, para começar nada mais justo que contar um pouco sobre minhas raízes hehe, eu nasci no litoral de São Paulo, conhecida por ser uma das cidades mais antigas do Brasil: Itanhaém, apesar deste fato, vivi apenas 2 anos na cidade natal, sendo assim, fui criada mesmo no interior de São Paulo. \n \n Durante minha infância, por ser do interior, não tive muito contato com tecnologia no geral, meu primeiro celular foi um tijolão rosa que ganhei aos 11 anos, usava para ouvir música e jogar aqueles joguinhos que vinham extremamente nostálgicos. Apesar disso, sempre quando podia cutucava a internet e os softwares, dando um jeito de baixar as músicas que queria, algo que inclusive faço até hoje rsrsrs, ainda não me adaptei aos serviços de streaming de música. \n \n Bom o tempo passou e de uma forma bem inesperada vim parar em Santa Catarina, o que além de ser marcante foi extremamente importante pro meu desenvolvimento. ",
   },
