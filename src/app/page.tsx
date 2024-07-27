@@ -18,15 +18,16 @@ export default function Home() {
               <h2 className="infocard-title">Front-end Developer</h2>
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
-                Fernanda Guimarães Santana, sou desenvolvedora há mais ou menos 3
-                anos e tenho experiência sólida no front-end, principalmente
+                Fernanda Guimarães Santana, sou desenvolvedora há mais ou menos
+                3 anos e tenho experiência sólida no front-end, principalmente
                 utilizando o ReactJS. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
               <a
                 className="infocard-link"
-                href="https://www.canva.com/design/DAGEdID2D-c/HPas-G49TvoFK4N1cacEqw/edit?utm_content=DAGEdID2D-c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                href="./cv-fernanda.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <button className="default-button"> cv_fernanda</button>
               </a>
@@ -53,8 +54,8 @@ export default function Home() {
                 <h4 className="experience-name h4-title">Avanti</h4>
                 <p className="subtitle"> 09/2021 - 07/2023</p>
                 <p className="experience-description paragraph-text">
-                  Desenvolvimento de projetos utilizando a plataforma VTEX.IO como:
-                  Fila, PenseFarma, Kopenhagen e Mizuno.
+                  Desenvolvimento de sites de e-commerce utilizando a plataforma
+                  VTEX.IO como: Fila, PenseFarma, Kopenhagen e Mizuno.
                 </p>
               </div>
               <div className="experience-div">
@@ -121,13 +122,13 @@ export default function Home() {
                   <p className="sobre-text paragraph-text">
                     <strong>bio</strong> <br />
                     Comecei minha carreira no mundo da programação aos 16 anos,
-                    desde então o meu foco tem sido aprimorar minhas habilidades,
-                    especialmente conhecendo de tudo um pouco, para cada vez
-                    mais me aprofundar no que me identifico. <br /> Como
-                    estudante, quero me desenvolver profissionalmente, sempre em
-                    busca de inovar e trazer bons resultados. Sou proativa e bem
-                    detalhista, e como sempre eu digo: não há nada que eu não sei
-                    que eu não possa aprender e descobrir.
+                    desde então o meu foco tem sido aprimorar minhas
+                    habilidades, especialmente conhecendo de tudo um pouco, para
+                    cada vez mais me aprofundar no que me identifico. <br />{" "}
+                    Como estudante, quero me desenvolver profissionalmente,
+                    sempre em busca de inovar e trazer bons resultados. Sou
+                    proativa e bem detalhista, e como sempre eu digo: não há
+                    nada que eu não sei que eu não possa aprender e descobrir.
                   </p>
                 </div>
               </div>
