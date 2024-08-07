@@ -74,6 +74,16 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className="certificates-container">
+              <a
+                href="https://drive.google.com/drive/folders/1RddMQjN_q8icJxYVU4g20Rwm65xWTY2G?usp=sharing"
+                target="_blank"
+              >
+                <button className="certificates">
+                  Clique aqui para visualizar certificados
+                </button>
+              </a>
+            </div>
           </section>
           <section
             id="education"
