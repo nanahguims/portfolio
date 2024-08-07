@@ -108,6 +108,16 @@
   }
 }
 
+.certificates-container {
+  @include flexLayout($justify-content: center, $align-items: center);
+
+  .certificates {
+    @include primaryButton($max-width: 100%);
+    width: auto;
+    padding: 0 15px;
+  }
+}
+
 .education {
   &-container {
     border-bottom: 0;
