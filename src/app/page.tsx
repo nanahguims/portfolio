@@ -15,11 +15,11 @@ export default function Home() {
               <img src="./images/annythingelse.jpg" alt="annythingelse" />
             </div>
             <div className="infocard-links">
-              <h2 className="infocard-title">Front-end Developer</h2>
+              <h2 className="infocard-title">Developer & TI</h2>
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
-                Fernanda Guimarães Santana, sou desenvolvedora há mais ou menos
-                3 anos e tenho experiência sólida no front-end, principalmente
+                Fernanda Guimarães Santana, trabalho com tecnologia há mais ou menos
+                3 anos e tenho experiência sólida no desenvolvimento front-end e suporte TI, principalmente
                 utilizando o ReactJS. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
@@ -52,6 +52,7 @@ export default function Home() {
             <div className="experience">
               <div className="experience-div">
                 <h4 className="experience-name h4-title">Avanti</h4>
+                <p className="subtitle"> Web Developer</p>
                 <p className="subtitle"> 09/2021 - 07/2023</p>
                 <p className="experience-description paragraph-text">
                   Desenvolvimento de sites de e-commerce utilizando a plataforma
@@ -60,6 +61,7 @@ export default function Home() {
               </div>
               <div className="experience-div">
                 <h4 className="experience-name h4-title">NSC Comunicação</h4>
+                <p className="subtitle">Aprendiz Suporte</p>
                 <p className="subtitle">12/2023 - 03/2024</p>
                 <p className="experience-description paragraph-text">
                   Atender a problemas de hardware ou software, oferecer suporte
@@ -68,9 +70,19 @@ export default function Home() {
               </div>
               <div className="experience-div">
                 <h4 className="experience-name h4-title">Intelbras</h4>
-                <p className="subtitle">03/2024 - Atualmente</p>
+                <p className="subtitle">Aprendiz Back-end</p>
+                <p className="subtitle">03/2024 - 09/2024</p>
                 <p className="experience-description paragraph-text">
                   Aprender e trabalhar no desenvolvimento focado no back-end.
+                </p>
+              </div>
+              <div className="experience-div">
+                <h4 className="experience-name h4-title">Mais Internet</h4>
+                <p className="subtitle"> Assistente de suporte TI </p>
+                <p className="subtitle"> 09/2024 - Atualmente</p>
+                <p className="experience-description paragraph-text">
+                Resolver a problemas de hardware ou software, oferecer suporte
+                técnico, criação e monitoramento de usuários.
                 </p>
               </div>
             </div>
