@@ -81,11 +81,12 @@
 }
 
 .experience {
-  @include flexLayout(flex, row, space-between, normal, nowrap);
+  @include flexLayout(flex, row, center, normal, wrap);
   margin: 0 auto 40px auto;
   border-bottom: 0;
   gap: $gap;
   &-div {
+    width: 100% ;
     background: $pink;
     padding: $padding;
     @include flexLayout(flex, column, left, center, nowrap);
