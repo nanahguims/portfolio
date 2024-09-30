@@ -19,8 +19,7 @@ export default function Home() {
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
                 Fernanda Guimarães Santana, trabalho com tecnologia há mais ou menos
-                3 anos e tenho experiência sólida no desenvolvimento front-end e suporte TI, principalmente
-                utilizando o ReactJS. Se quiser saber mais de forma prática ↪
+                3 anos, tenho experiência sólida em desenvolvimento front-end e suporte TI. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
               <a
