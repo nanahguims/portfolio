@@ -8,12 +8,12 @@
   }
 }
 
-// @font-face {
-//   font-family: "Jenthill", sans-serif;
-//   src: url("/fonts/jenthill.ttf") format("truetype");
-//   font-style: normal;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "Jenthill";
+  src: url("/fonts/Jenthill.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
 
 .default-container {
   @include containerConfig();

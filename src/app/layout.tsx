@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
-import localFont from "next/font/local";
 import "../styles/globals.scss";
 
 const jost = Jost({ subsets: ["latin"] });
@@ -12,12 +11,6 @@ export const metadata: Metadata = {
     icon: "./favicon.co",
   },
 };
-
-const Jenthill = localFont({
-  src: "/fonts/jenthill.ttf",
-  display: "swap",
-  style: "normal",
-});
 
 export default function RootLayout({
   children,
