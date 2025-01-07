@@ -1,7 +1,6 @@
 .accordion {
   &-container {
     padding: 20px 0;
-    @include containerConfig($max-width: $tablet-md);
     border-bottom: 0;
   }
 
