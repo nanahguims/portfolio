@@ -31,7 +31,7 @@
       $font-weight: $font-regular
     );
 
-    @include breakpoint($tablet-lg, max)  {
+    @include breakpoint($tablet-lg, max) {
       text-align: center;
     }
   }
@@ -42,7 +42,7 @@
       $font-weight: $font-regular
     );
 
-    @include breakpoint($tablet-lg, max)  {
+    @include breakpoint($tablet-lg, max) {
       text-align: center;
     }
 

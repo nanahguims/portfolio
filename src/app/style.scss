@@ -1,19 +1,17 @@
 .home-container {
   margin-top: 65px;
+  background: $light-pink;
   @include breakpoint(465px, max) {
     margin-top: 134px;
   }
 }
 
 .home-infocard {
-  min-height: 400px;
-  @include linearGradient();
-  @include flexLayout();
+  @include flexLayout($justify-content: center);
+  padding: 25px;
 
   @include breakpoint($mobile-md, max) {
-    justify-content: center;
     flex-direction: column;
-    padding: 25px;
   }
 }
 
@@ -29,7 +27,7 @@
   }
 
   &-title {
-    @include titleConfig($font-size: 35px, $text-align: left);
+    @include titleConfig($font-size: 30px, $text-align: left);
   }
 
   &-text {
@@ -41,23 +39,19 @@
     width: 100%;
   }
 
-  @include breakpoint($mobile-md, max) {
-    &-title {
-      font-size: 30px;
-    }
+  &-image {
+    max-width: 200px;
+    margin-bottom: 20px;
 
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  @include breakpoint($mobile-md, max) {
     &-links {
       align-items: center;
       text-align: center;
-    }
-
-    &-image {
-      max-width: 200px;
-      margin-bottom: 20px;
-
-      img {
-        border-radius: 100%;
-      }
     }
   }
 }
@@ -81,81 +75,98 @@
 }
 
 .experience {
-  @include flexLayout(flex, row, center, normal, wrap);
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
   border-bottom: 0;
-  gap: $gap;
+
   &-div {
-    width: 100% ;
-    background: $pink;
-    padding: $padding;
-    @include flexLayout(flex, column, left, center, nowrap);
-    text-align: center;
-    max-width: 400px;
-    border-radius: 20px;
+    @include flexLayout(flex, row, space-between, normal, nowrap);
+    margin-bottom: 30px;
+    @include breakpoint($tablet-lg, max) {
+      flex-direction: column;
+      padding: 0 20px;
+    }
   }
 
-  @include breakpoint(1212px, max) {
-    padding: $padding;
+  &-item {
+    @include flexLayout(flex, column, left, normal, nowrap);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 2px;
+      background-color: $secondary-color;
+      top: 20px;
+      right: calc(100% + 2rem);
+    }
+    @include breakpoint($tablet-lg, min) {
+      width: 65%;
+    }
   }
 
-  @include breakpoint($tablet-lg, max) {
-    @include flexLayout(
-      $flex-direction: column,
-      $justify-content: center,
-      $align-items: center
-    );
-    gap: $gap;
+  &-name {
+    font-family: $secondary-font;
+    margin: 10px 0;
+    font-size: 25px;
+    @include breakpoint($tablet-lg, min) {
+      align-self: flex-start;
+      transform: rotate(-5deg);
+      transform-origin: bottom left;
+      padding-left: 0.2rem;
+    }
   }
-}
 
-.certificates-container {
-  @include flexLayout($justify-content: center, $align-items: center);
-
-  .certificates {
-    @include primaryButton($max-width: 100%);
-    width: auto;
-    padding: 0 15px;
+  &-title {
+    @include titleConfig($font-size: 30px, $text-align: left);
   }
 }
 
 .education {
-  &-container {
-    border-bottom: 0;
-  }
-
   &-title {
     margin-bottom: 25px;
   }
 
   &-div {
-    @include flexLayout($justify-content: flex-start);
-    gap: $gap;
-    img {
-      max-width: 350px;
-    }
+    @include flexLayout($justify-content: center);
 
     @include breakpoint($tablet-lg, max) {
-      padding: 0 20px;
+      padding: 20px;
       @include flexLayout(
         $flex-direction: column,
         $justify-content: center,
         $align-items: center
       );
-
-      img {
-        max-width: 200px;
-      }
     }
   }
 
   &-description {
-    max-width: 400px;
+    background: $white-01;
+    padding: $padding;
+    border-radius: 10px;
+    border: solid 2px $secondary-color;
+    -webkit-box-shadow: 0.5rem 0.5rem 0 0 $secondary-color;
+    -moz-box-shadow: 0.5rem 0.5rem 0 0 $secondary-color;
+    box-shadow: 0.5rem 0.5rem 0 0 $secondary-color;
+    transform: translateX(-0.5rem);
+    filter: saturate(0.7);
   }
 
   &-name {
     text-align: left;
   }
+}
+
+.formation {
+  position: absolute;
+  top: -2.5rem;
+  left: 1.8rem;
+  padding: 0.5rem 1.25rem;
+  background: $white-01;
+  color: $secondary-color;
+  border: solid 2px $secondary-color;
+  -webkit-box-shadow: 0.3rem 0.3rem 0 0 $secondary-color;
+  -moz-box-shadow: 0.3rem 0.3rem 0 0 $secondary-color;
+  box-shadow: 0.3rem 0.3rem 0 0 v;
 }
 
 .sobre {
@@ -188,19 +199,9 @@
       );
     }
   }
-
-  &-button {
-    margin-top: 10px;
-    max-width: 100px;
-  }
 }
 
 .history {
-  &-title {
-    padding-top: 30px;
-    text-align: left;
-  }
-
   &-container {
     @include breakpoint(1252px, max) {
       padding: 0 20px;

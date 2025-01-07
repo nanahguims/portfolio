@@ -1,7 +1,11 @@
+// Fonts
+$secondary-font: "Jenthill", serif;
+
 // colors
-$primary-color: #a11e56;
+$primary-color: #0d3a56;
 $secondary-color: #3f3346;
 $white: #ffff;
+$white-01: #ededed;
 $pink: rgb(238, 174, 202);
 $light-pink: #f9e6f0;
 $gray: #ccc;
@@ -74,11 +78,12 @@ $ultrawide: 3440px;
 @mixin titleConfig(
   $font-size: 32px,
   $text-align: center,
-  $color: $secondary-color
+  $color: $secondary-color,
+  $font-weight: $font-semibold
 ) {
   font-size: $font-size;
   text-align: $text-align;
-  font-weight: $font-semibold;
+  font-weight: $font-weight;
   color: $color;
 }
 
