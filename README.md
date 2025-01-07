@@ -1,6 +1,7 @@
 # Meu Portfólio 🩷
 
 Bem-vindo ao meu portfólio! Aqui você encontrará um pouco sobre mim, minhas competências, experiências, etc.
+
 ## Tecnologias Utilizadas 🛠️
 
 - [Next.js](https://nextjs.org/) - O Next.js é um framework de React que me permitiu criar este portfólio de forma eficiente, com roteamento fácil, renderização do lado do servidor e outras funcionalidades avançadas.
@@ -14,7 +15,7 @@ Siga estas instruções para executar o projeto em sua máquina local:
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/annythingelse/portfolio.git
+git clone https://github.com/nanahguims/portfolio.git
 ```
 
 2. **Instale as dependências:**

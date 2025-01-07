@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="socialmedia-container">
           <h3 className="footer-title"> Entre em contato: </h3>
           <div className="socialmedia">
-            <a href="https://github.com/annythingelse/" target="_blank">
+            <a href="https://github.com/nanahguims/" target="_blank">
               <img src="./images/github.png" alt="" />
             </a>
             <a href="mailto:fernandadev0202@gmail.com">
@@ -36,7 +36,7 @@ export default function Footer() {
         </p>
         <p className="footer-text">
           Link do Repositório:{" "}
-          <a href="https://github.com/annythingelse/portfolio" target="_blank">
+          <a href="https://github.com/nanahguims/portfolio" target="_blank">
             github
           </a>
         </p>

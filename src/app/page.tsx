@@ -12,14 +12,15 @@ export default function Home() {
         <div className="home-container">
           <section className="home-infocard">
             <div className="infocard-image">
-              <img src="./images/annythingelse.jpg" alt="annythingelse" />
+              <img src="./images/nanahguims.png" alt="nanahguims" />
             </div>
             <div className="infocard-links">
-              <h2 className="infocard-title">Developer & TI</h2>
+              <h2 className="infocard-title">Nanahguims</h2>
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
-                Fernanda Guimarães Santana, trabalho com tecnologia há mais ou menos
-                3 anos, tenho experiência sólida em desenvolvimento front-end e suporte TI. Se quiser saber mais de forma prática ↪
+                Fernanda Guimarães Santana, trabalho com tecnologia há mais ou
+                menos 3 anos, tenho experiência sólida em desenvolvimento
+                front-end e suporte TI. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
               <a
@@ -47,62 +48,42 @@ export default function Home() {
             id="experience"
             className="experience-container default-container"
           >
-            <h3 className="experience-title h3-title">Experiência</h3>
+            <h3 className="h3-title">Experience</h3>
             <div className="experience">
               <div className="experience-div">
-                <h4 className="experience-name h4-title">Avanti</h4>
-                <p className="subtitle"> Web Developer</p>
-                <p className="subtitle"> 09/2021 - 07/2023</p>
-                <p className="experience-description paragraph-text">
-                  Desenvolvimento de sites de e-commerce utilizando a plataforma
-                  VTEX.IO como: Fila, PenseFarma, Kopenhagen e Mizuno.
-                </p>
+                <p className="experience-name"> Suporte TI </p>
+                <div className="experience-item">
+                  <h4 className="experience-title">Mais Internet</h4>
+                  <p className="subtitle"> 09/2024 - Atualmente</p>
+                  <p className="experience-description paragraph-text">
+                    Atender a problemas de hardware ou software, oferecer
+                    suporte técnico, criação e monitoramento de usuários.
+                    Integração e desenvolvimento de sistemas web utilizando
+                    tecnologias como ReactJS, JavaScript, TypeScript e CSS,
+                    consultas e requisições de APIs REST.
+                  </p>
+                </div>
               </div>
               <div className="experience-div">
-                <h4 className="experience-name h4-title">NSC Comunicação</h4>
-                <p className="subtitle">Aprendiz Suporte</p>
-                <p className="subtitle">12/2023 - 03/2024</p>
-                <p className="experience-description paragraph-text">
-                  Atender a problemas de hardware ou software, oferecer suporte
-                  técnico e montar equipamentos.
-                </p>
+                <p className="experience-name"> Frontend Developer</p>
+                <div className="experience-item">
+                  <h4 className="experience-title">Avanti</h4>
+                  <p className="subtitle"> 09/2021 - 07/2023</p>
+                  <p className="experience-description paragraph-text">
+                    Desenvolvimento de sites de e-commerce utilizando a
+                    plataforma VTEX.IO como: Fila, PenseFarma, Kopenhagen e
+                    Mizuno.
+                  </p>
+                </div>
               </div>
-              <div className="experience-div">
-                <h4 className="experience-name h4-title">Intelbras</h4>
-                <p className="subtitle">Aprendiz Back-end</p>
-                <p className="subtitle">03/2024 - 09/2024</p>
-                <p className="experience-description paragraph-text">
-                  Aprender e trabalhar no desenvolvimento focado no back-end.
-                </p>
-              </div>
-              <div className="experience-div">
-                <h4 className="experience-name h4-title">Mais Internet</h4>
-                <p className="subtitle"> Assistente de suporte TI </p>
-                <p className="subtitle"> 09/2024 - Atualmente</p>
-                <p className="experience-description paragraph-text">
-                Resolver a problemas de hardware ou software, oferecer suporte
-                técnico, criação e monitoramento de usuários.
-                </p>
-              </div>
-            </div>
-            <div className="certificates-container">
-              <a
-                href="https://drive.google.com/drive/folders/1RddMQjN_q8icJxYVU4g20Rwm65xWTY2G?usp=sharing"
-                target="_blank"
-              >
-                <button className="certificates">
-                  Clique aqui para visualizar certificados
-                </button>
-              </a>
             </div>
           </section>
           <section
             id="education"
             className="education-container default-container"
           >
-            <h3 className="education-title h3-title">Formação</h3>
+            <h3 className="education-title h3-title">Education</h3>
             <div className="education-div">
-              <img src="./images/education.png" alt="" />
               <div className="education-description">
                 <h4 className="education-name h4-title">
                   Bacharelado Interdiciplinar em Ciência e Tecnologia
@@ -111,14 +92,17 @@ export default function Home() {
                   Universidade do Estado de Santa Cataria (UDESC)
                 </p>
                 <p className="education-text paragraph-text">
-                  02/2024 - Atualmente
+                  Terceiro semestre
                 </p>
+                <div className="formation">
+                  <p className="paragraph-text">2024 - 2026</p>
+                </div>
               </div>
             </div>
           </section>
           <div id="sobre" className="sobre">
             <section className="sobre-container default-container">
-              <h3 className="sobre-title h3-title">Um pouco sobre mim</h3>
+              <h3 className="sobre-title h3-title">About me</h3>
               <div className="sobre-div">
                 <div className="sobre-container-photo">
                   <img src="./images/me.png" alt="" />
@@ -133,11 +117,7 @@ export default function Home() {
                     className="sobre-link"
                     href="https://www.linkedin.com/in/fernanda-guimar%C3%A3es-santana/"
                     target="_blank"
-                  >
-                    <button className="sobre-button default-button">
-                      ver mais
-                    </button>
-                  </a>
+                  ></a>
                 </div>
                 <div className="sobre-container-bio">
                   <p className="sobre-text paragraph-text">
@@ -156,7 +136,6 @@ export default function Home() {
             </section>
           </div>
           <section className="history-container default-container">
-            <h4 className="history-title h4-title">Minha História</h4>
             <History />
           </section>
         </div>

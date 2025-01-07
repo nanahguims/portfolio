@@ -8,13 +8,20 @@
   }
 }
 
+@font-face {
+  font-family: "Jenthill";
+  src: url("/fonts/jenthill/jenthill.ttf") format("truetype");
+  font-style: normal;
+}
+
 .default-container {
   @include containerConfig();
 }
 
 .h3-title {
   margin: 50px 0;
-  @include titleConfig();
+  @include titleConfig($font-weight: $font-medium);
+  font-family: $secondary-font;
 }
 
 .h4-title {
