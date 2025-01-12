@@ -25,7 +25,7 @@ export default function Home() {
               </p>
               <a
                 className="infocard-link"
-                href="./cv-fernanda.pdf"
+                href="./cv_fernanda.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
