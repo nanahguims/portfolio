@@ -57,7 +57,7 @@ export default function Home() {
               <img src="./icons/typescript.svg" alt="" />
               <img src="./icons/react.svg" alt="" />
               <img src="./icons/python.png" alt="" />
-              <img src="./icons/ITIL.png" alt="" />
+              <img src="./icons/kaspersky.png" alt="" />
               <img src="./icons/Windows_11.png" alt="" />
               <img src="./icons/Azure.png" alt="" />
             </div>
