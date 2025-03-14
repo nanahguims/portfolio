@@ -74,7 +74,7 @@ export default function Home() {
                   <h4 className="experience-title">Sicoob</h4>
                   <p className="subtitle"> 03/2025 - Atualmente</p>
                   <p className="experience-description paragraph-text">
-                    Atendimento ao usuário, manutenção preventiva e corretiva de computadores (Hardware), Atendimento de chamados, instalação e configuração de software, Windows 11 ( instalação e configuração), Gestão de Acessos, controle de máquinas e usuários no AD, criar e desativar usuário no AD, Atendimento remoto e presencial e Suporte aos Sistemas internos
+                    Atendimento ao usuário, manutenção preventiva e corretiva de computadores (Hardware), Atendimento de chamados, instalação e configuração de software, Windows 11 ( instalação e configuração), Gestão de Acessos, controle de máquinas e usuários no AD, criar e desativar usuário no AD, Atendimento remoto e presencial e Suporte aos Sistemas internos.
                   </p>
                 </div>
               </div>
