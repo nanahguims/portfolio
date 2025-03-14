@@ -4,6 +4,23 @@ import Footer from "@/components/footer";
 import "./style.scss";
 import { History } from "@/components/accordion/content";
 
+const myAge = () => {
+  const birthdayDate = new Date('2005-02-02')
+  const today = new Date();
+
+  let age = today.getFullYear() - birthdayDate.getFullYear()
+
+  const newAge = today.getMonth() > birthdayDate.getMonth() ||
+  (today.getMonth() === birthdayDate.getMonth() && today.getDate() >= birthdayDate.getDate());
+
+    if (!newAge) {
+      age--;
+    }
+
+  return age
+}
+
+
 export default function Home() {
   return (
     <>
@@ -36,12 +53,13 @@ export default function Home() {
           <section className="technologys-container default-container ">
             <h3 className="technologys-title h3-title">Hard Skills</h3>
             <div className="technologys">
-              <img src="./icons/typescript.svg" alt="" />
               <img src="./icons/sass.svg" alt="" />
-              <img src="./icons/js.svg" alt="" />
+              <img src="./icons/typescript.svg" alt="" />
               <img src="./icons/react.svg" alt="" />
-              <img src="./icons/vtex.svg" alt="" />
-              <img src="./icons/nextjs.svg" alt="" />
+              <img src="./icons/python.png" alt="" />
+              <img src="./icons/ITIL.png" alt="" />
+              <img src="./icons/Windows_11.png" alt="" />
+              <img src="./icons/Azure.png" alt="" />
             </div>
           </section>
           <section
@@ -50,11 +68,21 @@ export default function Home() {
           >
             <h3 className="h3-title">Experience</h3>
             <div className="experience">
+            <div className="experience-div">
+                <p className="experience-name">Assistente de Suporte TI </p>
+                <div className="experience-item">
+                  <h4 className="experience-title">Sicoob</h4>
+                  <p className="subtitle"> 03/2025 - Atualmente</p>
+                  <p className="experience-description paragraph-text">
+                    Atendimento ao usuário, manutenção preventiva e corretiva de computadores (Hardware), Atendimento de chamados, instalação e configuração de software, Windows 11 ( instalação e configuração), Gestão de Acessos, controle de máquinas e usuários no AD, criar e desativar usuário no AD, Atendimento remoto e presencial e Suporte aos Sistemas internos
+                  </p>
+                </div>
+              </div>
               <div className="experience-div">
                 <p className="experience-name"> Suporte TI </p>
                 <div className="experience-item">
                   <h4 className="experience-title">Mais Internet</h4>
-                  <p className="subtitle"> 09/2024 - Atualmente</p>
+                  <p className="subtitle"> 09/2024 - 03/2025</p>
                   <p className="experience-description paragraph-text">
                     Atender a problemas de hardware ou software, oferecer
                     suporte técnico, criação e monitoramento de usuários.
@@ -109,7 +137,7 @@ export default function Home() {
                   <p className="subtitle">
                     <strong> Nanda</strong>
                   </p>
-                  <p className="paragraph-text">19 anos</p>
+                  <p className="paragraph-text">Idade: {myAge()}</p>
                   <p className="paragraph-text">
                     Jogo favorito: Stardew Valley
                   </p>
