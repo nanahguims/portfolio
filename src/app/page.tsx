@@ -53,13 +53,13 @@ export default function Home() {
           <section className="technologys-container default-container ">
             <h3 className="technologys-title h3-title">Hard Skills</h3>
             <div className="technologys">
-              <img src="./icons/sass.svg" alt="" />
-              <img src="./icons/typescript.svg" alt="" />
-              <img src="./icons/react.svg" alt="" />
-              <img src="./icons/python.png" alt="" />
-              <img src="./icons/kaspersky.png" alt="" />
-              <img src="./icons/Windows_11.png" alt="" />
-              <img src="./icons/Azure.png" alt="" />
+              <img src="./icons/sass.svg" alt="sass" />
+              <img src="./icons/typescript.svg" alt="typescript" />
+              <img src="./icons/react.svg" alt="react" />
+              <img src="./icons/python.png" alt="python" />
+              <img src="./icons/kaspersky.png" alt="kaspersky" />
+              <img src="./icons/Windows_11.png" alt="windows-11" />
+              <img src="./icons/Azure.png" alt="azure" />
             </div>
           </section>
           <section
