@@ -8,7 +8,7 @@ $white: #ffff;
 $white-01: #ededed;
 $pink: rgb(238, 174, 202);
 $light-pink: #ebc9c9;
-$gray: #ccc;
+$gray: #0d3a5656;
 
 // font-weight
 $font-light: 300;
@@ -100,7 +100,7 @@ $ultrawide: 3440px;
 @mixin containerConfig(
   $max-width: 1252px,
   $padding-bottom: 40px,
-  $border-bottom: 1px solid $gray
+  $border-bottom: 2px solid $gray
 ) {
   max-width: $max-width;
   margin: 0 auto;
