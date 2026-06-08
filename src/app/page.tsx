@@ -5,21 +5,22 @@ import "./style.scss";
 import { History } from "@/components/accordion/content";
 
 const myAge = () => {
-  const birthdayDate = new Date('2005-02-02')
+  const birthdayDate = new Date("2005-02-02");
   const today = new Date();
 
-  let age = today.getFullYear() - birthdayDate.getFullYear()
+  let age = today.getFullYear() - birthdayDate.getFullYear();
 
-  const newAge = today.getMonth() > birthdayDate.getMonth() ||
-  (today.getMonth() === birthdayDate.getMonth() && today.getDate() >= birthdayDate.getDate());
+  const newAge =
+    today.getMonth() > birthdayDate.getMonth() ||
+    (today.getMonth() === birthdayDate.getMonth() &&
+      today.getDate() >= birthdayDate.getDate());
 
-    if (!newAge) {
-      age--;
-    }
+  if (!newAge) {
+    age--;
+  }
 
-  return age
-}
-
+  return age;
+};
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         <div className="home-container">
           <section className="home-infocard">
             <div className="infocard-image">
-              <img src="./images/nanahguims.png" alt="nanahguims" />
+              <img src="./images/nanahguims.jpeg" alt="nanahguims" />
             </div>
             <div className="infocard-links">
               <h2 className="infocard-title">Nanahguims</h2>
@@ -53,13 +54,13 @@ export default function Home() {
           <section className="technologys-container default-container ">
             <h3 className="technologys-title h3-title">Hard Skills</h3>
             <div className="technologys">
-              <img src="./icons/sass.svg" alt="sass" />
-              <img src="./icons/typescript.svg" alt="typescript" />
+              <img src="./icons/js.svg" alt="Javascript" />
               <img src="./icons/react.svg" alt="react" />
+              <img src="./icons/nextjs.svg" alt="NextJs" />
+              <img src="./icons/typescript.svg" alt="typescript" />
+              <img src="./icons/vtex.svg" alt="VTEXIO" />
+              <img src="./icons/sass.svg" alt="sass" />
               <img src="./icons/python.png" alt="python" />
-              <img src="./icons/kaspersky.png" alt="kaspersky" />
-              <img src="./icons/Windows_11.png" alt="windows-11" />
-              <img src="./icons/Azure.png" alt="azure" />
             </div>
           </section>
           <section
@@ -68,18 +69,20 @@ export default function Home() {
           >
             <h3 className="h3-title">Experience</h3>
             <div className="experience">
-            <div className="experience-div">
-                <p className="experience-name">Assistente de Suporte TI </p>
+              <div className="experience-div">
+                <p className="experience-name">Frontend Developer</p>
                 <div className="experience-item">
-                  <h4 className="experience-title">Sicoob</h4>
-                  <p className="subtitle"> 03/2025 - Atualmente</p>
+                  <h4 className="experience-title">Mais Internet</h4>
+                  <p className="subtitle"> 03/2026 - Atualmente</p>
                   <p className="experience-description paragraph-text">
-                    Atendimento ao usuário, manutenção preventiva e corretiva de computadores (Hardware), Atendimento de chamados, instalação e configuração de software, Windows 11 ( instalação e configuração), Gestão de Acessos, controle de máquinas e usuários no AD, criar e desativar usuário no AD, Atendimento remoto e presencial e Suporte aos Sistemas internos.
+                    Desenvolvimento e integração de sistemas web utilizando
+                    tecnologias como ReactJS, JavaScript, TypeScript e
+                    CSS/Tailwind, consultas e requisições de APIs REST.
                   </p>
                 </div>
               </div>
               <div className="experience-div">
-                <p className="experience-name"> Suporte TI </p>
+                <p className="experience-name"> Estágio</p>
                 <div className="experience-item">
                   <h4 className="experience-title">Mais Internet</h4>
                   <p className="subtitle"> 09/2024 - 03/2025</p>
@@ -119,9 +122,7 @@ export default function Home() {
                 <p className="education-university subtitle">
                   Universidade do Estado de Santa Cataria (UDESC)
                 </p>
-                <p className="education-text paragraph-text">
-                  Terceiro semestre
-                </p>
+                <p className="education-text paragraph-text">Quinto semestre</p>
                 <div className="formation">
                   <p className="paragraph-text">2024 - 2026</p>
                 </div>
@@ -133,9 +134,9 @@ export default function Home() {
               <h3 className="sobre-title h3-title">About me</h3>
               <div className="sobre-div">
                 <div className="sobre-container-photo">
-                  <img src="./images/me.png" alt="" />
+                  <img src="./images/me.jpeg" alt="" />
                   <p className="subtitle">
-                    <strong> Nanda</strong>
+                    <strong>Fernanda</strong>
                   </p>
                   <p className="paragraph-text">Idade: {myAge()}</p>
                   <p className="paragraph-text">

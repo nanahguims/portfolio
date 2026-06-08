@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer-text">
-          Layout totalmente desenvolvido por Fernanda Guimarães Santana
+          Layout desenvolvido por Fernanda Guimarães Santana
         </p>
         <p className="footer-text">
           Link do Repositório:{" "}
