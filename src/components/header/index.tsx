@@ -6,8 +6,7 @@ export default function Header() {
     <>
       <div className="header-container">
         <div className="header-container-image">
-          <img src="./images/logo.gif" alt="logo" />
-          <p className="logo-title">Dev Portfólio</p>
+          <p className="logo-title">nanahguims✨</p>
         </div>
         <div>
           <nav className="header-nav">

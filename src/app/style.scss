@@ -1,9 +1,5 @@
 .home-container {
-  margin-top: 65px;
   background: $light-pink;
-  @include breakpoint(465px, max) {
-    margin-top: 134px;
-  }
 }
 
 .home-infocard {
@@ -27,25 +23,44 @@
   }
 
   &-title {
-    @include titleConfig($font-size: 30px, $text-align: left);
+    line-height: 2.5rem;
+    @include titleConfig($font-size: 35px, $text-align: left);
   }
 
   &-text {
     max-width: 920px;
-    @include textConfig($font-size: 20px, $font-weight: $font-semibold);
+    @include textConfig($font-size: 20px, $font-weight: $font-regular);
   }
 
   &-link {
     width: 100%;
+    max-width: 200px;
   }
 
   &-image {
+    display: flex;
+    flex-direction: column;
     max-width: 200px;
     margin-bottom: 20px;
+    gap: $gap;
 
     img {
       border-radius: 100%;
     }
+
+    &-container {
+      background: rgba(248, 173, 173, 0.3);
+      border-radius: 30px;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+
+  &-buttons {
+    width: 100%;
+    @include flexLayout(flex, row, flex-start, start, nowrap);
+    gap: 10px;
   }
 
   @include breakpoint($mobile-md, max) {

@@ -30,10 +30,16 @@ export default function Home() {
         <div className="home-container">
           <section className="home-infocard">
             <div className="infocard-image">
+              <div className="infocard-image-container">
+                <img src="./icons/infocard.svg" alt="" />
+                Olá, eu sou a Nana!
+              </div>
               <img src="./images/nanahguims.jpeg" alt="nanahguims" />
             </div>
             <div className="infocard-links">
-              <h2 className="infocard-title">Nanahguims</h2>
+              <h2 className="infocard-title">
+                Desenvolvedora <br /> <strong>Front-end</strong>
+              </h2>
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
                 Fernanda Guimarães Santana, trabalho com tecnologia há mais ou
@@ -41,14 +47,24 @@ export default function Home() {
                 front-end e suporte TI. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
-              <a
-                className="infocard-link"
-                href="./cv_fernanda.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="default-button"> cv_fernanda</button>
-              </a>
+              <div className="infocard-buttons">
+                <a
+                  className="infocard-link"
+                  href="./cv_fernanda.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="default-button"> cv_fernanda</button>
+                </a>
+                <a
+                  className="infocard-link"
+                  href="./cv_fernanda.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="secondary-button"> cv_fernanda</button>
+                </a>
+              </div>
             </div>
           </section>
           <section className="technologys-container default-container ">
