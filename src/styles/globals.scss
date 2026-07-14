@@ -15,6 +15,10 @@
   font-display: swap;
 }
 
+body {
+  background: $card;
+}
+
 .default-container {
   @include containerConfig();
 }

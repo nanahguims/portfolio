@@ -4,11 +4,14 @@ $secondary-font: "Jenthill", sans-serif;
 // colors
 $primary-color: #894e4f;
 $secondary-color: #3f3346;
+$card: #fff8f7;
 $white: #ffff;
 $white-01: #ededed;
 $pink: #f8adad;
-$light-pink: #fff0f0;
+$pink-01: rgba(248, 173, 173, 0.3);
+$light-pink: #fff4f3;
 $gray: #0d3a5656;
+$border: rgba(215, 194, 193, 0.3);
 
 // font-weight
 $font-light: 300;
@@ -65,7 +68,7 @@ $ultrawide: 3440px;
 
 @mixin textConfig(
   $font-size: 18px,
-  $font-weight: $font-medium,
+  $font-weight: $font-regular,
   $text-align: left,
   $color: $secondary-color
 ) {
@@ -76,8 +79,8 @@ $ultrawide: 3440px;
 }
 
 @mixin titleConfig(
-  $font-size: 32px,
-  $text-align: center,
+  $font-size: 35px,
+  $text-align: left,
   $color: $secondary-color,
   $font-weight: $font-semibold
 ) {
@@ -119,7 +122,6 @@ $ultrawide: 3440px;
   max-width: $max-width;
   margin: 0 auto;
   padding-bottom: $padding-bottom;
-  border-bottom: $border-bottom;
 }
 
 @mixin flexLayout(
