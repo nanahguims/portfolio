@@ -1,6 +1,6 @@
 .footer {
   &-container {
-    background: $primary-color;
+    background: $light-pink;
     @include flexLayout(flex, column, center, center, wrap);
     padding: $padding-md;
     gap: $gap;
@@ -27,7 +27,7 @@
     margin: 0;
     @include textConfig(
       $font-size: 18px,
-      $color: $white,
+
       $font-weight: $font-regular
     );
 
@@ -36,11 +36,7 @@
     }
   }
   &-text {
-    @include textConfig(
-      $font-size: 18px,
-      $color: $white,
-      $font-weight: $font-regular
-    );
+    @include textConfig($font-size: 18px, $font-weight: $font-regular);
 
     @include breakpoint($tablet-lg, max) {
       text-align: center;

@@ -30,10 +30,16 @@ export default function Home() {
         <div className="home-container">
           <section className="home-infocard">
             <div className="infocard-image">
+              <div className="infocard-image-container">
+                <img src="./icons/infocard.svg" alt="" />
+                Olá, eu sou a Nana!
+              </div>
               <img src="./images/nanahguims.jpeg" alt="nanahguims" />
             </div>
             <div className="infocard-links">
-              <h2 className="infocard-title">Nanahguims</h2>
+              <h2 className="infocard-title">
+                Desenvolvedora <br /> <strong>Front-end</strong>
+              </h2>
               <p className="infocard-text">
                 Olá, Mundo! Seja bem-vindo(a) ao meu portfólio! Meu nome é
                 Fernanda Guimarães Santana, trabalho com tecnologia há mais ou
@@ -41,79 +47,99 @@ export default function Home() {
                 front-end e suporte TI. Se quiser saber mais de forma prática ↪
                 cheque o meu currículo clicando no botão abaixo.
               </p>
-              <a
-                className="infocard-link"
-                href="./cv_fernanda.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="default-button"> cv_fernanda</button>
-              </a>
-            </div>
-          </section>
-          <section className="technologys-container default-container ">
-            <h3 className="technologys-title h3-title">Hard Skills</h3>
-            <div className="technologys">
-              <img src="./icons/js.svg" alt="Javascript" />
-              <img src="./icons/react.svg" alt="react" />
-              <img src="./icons/nextjs.svg" alt="NextJs" />
-              <img src="./icons/typescript.svg" alt="typescript" />
-              <img src="./icons/vtex.svg" alt="VTEXIO" />
-              <img src="./icons/sass.svg" alt="sass" />
-              <img src="./icons/python.png" alt="python" />
-            </div>
-          </section>
-          <section
-            id="experience"
-            className="experience-container default-container"
-          >
-            <h3 className="h3-title">Experience</h3>
-            <div className="experience">
-              <div className="experience-div">
-                <p className="experience-name">Frontend Developer</p>
-                <div className="experience-item">
-                  <h4 className="experience-title">Mais Internet</h4>
-                  <p className="subtitle"> 03/2026 - Atualmente</p>
-                  <p className="experience-description paragraph-text">
-                    Desenvolvimento e integração de sistemas web utilizando
-                    tecnologias como ReactJS, JavaScript, TypeScript e
-                    CSS/Tailwind, consultas e requisições de APIs REST.
-                  </p>
-                </div>
-              </div>
-              <div className="experience-div">
-                <p className="experience-name"> Estágio</p>
-                <div className="experience-item">
-                  <h4 className="experience-title">Mais Internet</h4>
-                  <p className="subtitle"> 09/2024 - 03/2025</p>
-                  <p className="experience-description paragraph-text">
-                    Atender a problemas de hardware ou software, oferecer
-                    suporte técnico, criação e monitoramento de usuários.
-                    Integração e desenvolvimento de sistemas web utilizando
-                    tecnologias como ReactJS, JavaScript, TypeScript e CSS,
-                    consultas e requisições de APIs REST.
-                  </p>
-                </div>
-              </div>
-              <div className="experience-div">
-                <p className="experience-name"> Frontend Developer</p>
-                <div className="experience-item">
-                  <h4 className="experience-title">Avanti</h4>
-                  <p className="subtitle"> 09/2021 - 07/2023</p>
-                  <p className="experience-description paragraph-text">
-                    Desenvolvimento de sites de e-commerce utilizando a
-                    plataforma VTEX.IO como: Fila, PenseFarma, Kopenhagen e
-                    Mizuno.
-                  </p>
-                </div>
+              <div className="infocard-buttons">
+                <a
+                  className="infocard-link"
+                  href="./cv_fernanda.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="default-button"> cv_fernanda</button>
+                </a>
+                <a
+                  className="infocard-link"
+                  href="./cv_fernanda.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="secondary-button"> cv_fernanda</button>
+                </a>
               </div>
             </div>
           </section>
+          <div className="about-container default-container">
+            <section className="technologys-container">
+              <h3 className="technologys-title h3-title">Tecnologias</h3>
+              <div className="technologys">
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/html.svg" alt="html" />
+                  </div>
+                  Html5
+                </div>
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/javascript.svg" alt="Javascript" />
+                  </div>
+                  JS (ES6+)
+                </div>
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/react.svg" alt="React" />
+                  </div>
+                  React.js
+                </div>
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/nextjs.svg" alt="NextJs" />
+                  </div>
+                  Next.js
+                </div>
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/tailwind.svg" alt="tailwind" />
+                  </div>
+                  Tailwind
+                </div>
+                <div className="technologys-item">
+                  <div className="technologys-icon">
+                    <img src="./icons/css.svg" alt="Css" />
+                  </div>
+                  CSS3
+                </div>
+              </div>
+            </section>
+            <section id="experience" className="experience-container">
+              <h3 className="h3-title">Experiência</h3>
+              <div className="experience">
+                <div className="experience-div">
+                  <div className="experience-item">
+                    <h4 className="experience-title">Mais Internet</h4>
+
+                    <p className="experience-description paragraph-text">
+                      Desenvolvimento e integração de sistemas web utilizando
+                      tecnologias como ReactJS, JavaScript, TypeScript e
+                      CSS/Tailwind, consultas e requisições de APIs REST.
+                    </p>
+                  </div>
+                </div>
+                <div className="experience-div">
+                  <div className="experience-item">
+                    <h4 className="experience-title">Avanti</h4>
+                    <p className="experience-description paragraph-text">
+                      Desenvolvimento de sites de e-commerce utilizando a
+                      plataforma VTEX.IO como: Fila, PenseFarma, Kopenhagen e
+                      Mizuno.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
           <section
             id="education"
             className="education-container default-container"
           >
-            <h3 className="education-title h3-title">Education</h3>
             <div className="education-div">
               <div className="education-description">
                 <h4 className="education-name h4-title">
