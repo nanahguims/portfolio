@@ -56,14 +56,14 @@ export default function Home() {
                 >
                   <button className="default-button"> cv_fernanda</button>
                 </a>
-                <a
+                {/* <a
                   className="infocard-link"
                   href="./cv_fernanda.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button className="secondary-button"> cv_fernanda</button>
-                </a>
+                </a> */}
               </div>
             </div>
           </section>
