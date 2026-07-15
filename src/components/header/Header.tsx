@@ -36,7 +36,7 @@ export default function Header() {
           <span className="grid size-7 place-items-center rounded-full bg-gradient-to-br from-pink-300 to-fuchsia-400 text-white">
             <Heart className="size-3.5" fill="currentColor" />
           </span>
-          <span className="font-display text-base">Nanahguims</span>
+          <span className="font-display font-light">Nanahguims</span>
         </a>
 
         <nav className="glass-strong hidden items-center gap-1 rounded-full p-1.5 md:flex">

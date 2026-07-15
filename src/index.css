@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+
 @import "tailwindcss";
 
 @theme inline {
@@ -10,7 +12,7 @@
   --radius-4xl: calc(var(--radius) + 16px);
 
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Fraunces", "Outfit", ui-serif, serif;
+  --font-display: "DynaPuff", cursive;
   --font-body: "Manrope", "Outfit", ui-sans-serif, system-ui, sans-serif;
 
   --color-background: var(--background);
@@ -248,9 +250,15 @@
   }
 
   h1 {
-    font-size: 4rem;
-    line-height: 3.5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 500;
   }
 
   ::selection {
