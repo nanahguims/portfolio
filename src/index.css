@@ -96,62 +96,6 @@
   }
 } */
 
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-body);
-    background-image:
-      radial-gradient(
-        1200px 600px at 10% -10%,
-        color-mix(in oklab, var(--blush) 55%, transparent),
-        transparent 60%
-      ),
-      radial-gradient(
-        900px 500px at 100% 10%,
-        color-mix(in oklab, var(--petal) 45%, transparent),
-        transparent 60%
-      ),
-      radial-gradient(
-        1000px 700px at 50% 110%,
-        color-mix(in oklab, var(--cream) 70%, transparent),
-        transparent 60%
-      );
-    background-attachment: fixed;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: var(--font-display);
-    letter-spacing: -0.02em;
-  }
-
-  h1 {
-    font-size: xxx-large;
-    line-height: 3.5rem;
-  }
-
-  h2 {
-    font-size: x-large;
-    line-height: 2rem;
-  }
-
-  ::selection {
-    background: color-mix(in oklab, var(--hotpink) 25%, transparent);
-    color: var(--foreground);
-  }
-}
-
 @utility glass-card {
   background: color-mix(in oklab, white 65%, transparent);
   backdrop-filter: blur(20px) saturate(140%);
@@ -260,6 +204,58 @@
   }
   50% {
     background-position: 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    background-image:
+      radial-gradient(
+        1200px 600px at 10% -10%,
+        color-mix(in oklab, var(--blush) 55%, transparent),
+        transparent 60%
+      ),
+      radial-gradient(
+        900px 500px at 100% 10%,
+        color-mix(in oklab, var(--petal) 45%, transparent),
+        transparent 60%
+      ),
+      radial-gradient(
+        1000px 700px at 50% 110%,
+        color-mix(in oklab, var(--cream) 70%, transparent),
+        transparent 60%
+      );
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--hotpink) 25%, transparent);
+    color: var(--foreground);
   }
 }
 

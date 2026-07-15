@@ -58,18 +58,15 @@ export function CodeCard() {
     );
   }
 
-  const fullText = `const fernanda = {
-    role: "Front-end Developer",
-    stack: ["React", "TypeScript", "Motion"],
-    loves: ["pink", "bows", "sparkles"],
+  const fullText = `const contato = {
+  email: "contato@nana.dev",
+  localizacao: "Florianopolis, SC",
+  disponivel: true,
+  vamosConversar: () => {
+    return "Bora criar juntas! 💖";
+  }
 };
-
-function greet() {
-return \`Hello, world! ♡\`;
-}
-
-console.log(greet());
-// → Hello, world! ♡`;
+export default contato;`;
 
   const [typed, setTyped] = useState("");
 
@@ -104,7 +101,7 @@ console.log(greet());
             <span className="size-3 rounded-full bg-fuchsia-300" />
           </div>
           <span className="font-mono text-[11px] text-pink-500/80">
-            hello-world.ts
+            contato.ts
           </span>
           <Ribbon className="size-3.5 text-pink-400" />
         </div>
@@ -112,7 +109,7 @@ console.log(greet());
         {/* Code body */}
         <pre className="relative flex gap-4 overflow-hidden px-5 py-5 font-mono text-[12.5px] leading-[1.7] sm:text-[13px]">
           <span aria-hidden className="select-none text-right text-pink-300/80">
-            {Array.from({ length: 14 }, (_, i) => (
+            {Array.from({ length: 10 }, (_, i) => (
               <span key={i} className="block">
                 {String(i + 1).padStart(2, "0")}
               </span>
