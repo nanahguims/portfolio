@@ -1,63 +1,75 @@
-# Meu Portfólio 🩷
+# React + TypeScript + Vite
 
-Bem-vindo ao meu portfólio! Aqui você encontrará um pouco sobre mim, minhas competências, experiências, etc.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tecnologias Utilizadas 🛠️
+Currently, two official plugins are available:
 
-- [Next.js](https://nextjs.org/) - O Next.js é um framework de React que me permitiu criar este portfólio de forma eficiente, com roteamento fácil, renderização do lado do servidor e outras funcionalidades avançadas.
-- [TypeScript](https://www.typescriptlang.org/) - TypeScript é uma linguagem de programação que estende o JavaScript adicionando tipos estáticos opcionais. Ele me ajudou a escrever um código mais seguro e legível.
-- [Sass](https://sass-lang.com/) - Sass é uma linguagem de extensão CSS que me permitiu escrever estilos mais poderosos e modulares para este projeto.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Como Executar o Projeto ▶️
+## React Compiler
 
-Siga estas instruções para executar o projeto em sua máquina local:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-1. **Clone o repositório:**
+## Expanding the ESLint configuration
 
-```bash
-git clone https://github.com/nanahguims/portfolio.git
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
 ```
 
-2. **Instale as dependências:**
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```bash
-cd seu-projeto
-npm install
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
 ```
-
-3. **Inicie o servidor de desenvolvimento:**
-
-```bash
-npm run dev
-```
-
-4. **Acesse o projeto no navegador:**
-
-Abra seu navegador e acesse `http://localhost:3000` para visualizar o projeto.
-
-## Estrutura do Projeto 📂
-
-Aqui está uma visão geral da estrutura de pastas do projeto:
-
-```
-meu-projeto/
-├── components/
-├── pages/
-├── public/
-├── styles/
-├── README.md
-├── next.config.js
-└── package.json
-```
-
-- **`components/`**: Contém os componentes React reutilizáveis utilizados no projeto.
-- **`pages/`**: Contém as páginas React que são renderizadas pelo Next.js.
-- **`public/`**: Contém arquivos estáticos, como imagens e ícones, acessíveis publicamente.
-- **`styles/`**: Contém arquivos Sass para estilos adicionais.
-- **`README.md`**: Este arquivo! Documentação do projeto.
-- **`next.config.js`**: Configurações adicionais do Next.js.
-- **`package.json`**: Arquivo de manifesto do Node.js que lista as dependências do projeto.
-
-## Contribuição 🙌
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se encontrar algum problema ou enviar um pull request com melhorias.
