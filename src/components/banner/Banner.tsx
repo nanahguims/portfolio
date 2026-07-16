@@ -25,11 +25,15 @@ export default function Banner() {
           abaixo.
         </p>
         <div className="flex gap-2 mt-5">
-          <button className="flex gap-2 btn-primary rounded-full">
-            <Download />
-            Baixar currículo
-          </button>
-          <button className="btn-ghost rounded-full">Entre em contato</button>
+          <a target="_blank" href="../../../public/cv_fernanda.pdf">
+            <button className="flex gap-2 btn-primary rounded-full">
+              <Download />
+              Baixar currículo
+            </button>
+          </a>
+          <a href="#contact">
+            <button className="btn-ghost rounded-full">Entre em contato</button>
+          </a>
         </div>
       </div>
 
@@ -39,7 +43,7 @@ export default function Banner() {
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.15 }}
         className="relative mx-auto w-full max-w-md"
       >
-        <div className="absolute -inset-6 -z-10 rounded-[3rem] bg-gradient-to-br from-pink-200 via-rose-200 to-fuchsia-200 blur-2xl opacity-70" />
+        <div className="absolute -inset-6 -z-10 rounded-[3rem] bg-linear-to-br from-pink-200 via-rose-200 to-fuchsia-200 blur-2xl opacity-70" />
         <CodeCard />
       </motion.div>
     </section>

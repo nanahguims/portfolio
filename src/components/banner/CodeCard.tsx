@@ -59,7 +59,7 @@ export function CodeCard() {
   }
 
   const fullText = `const contato = {
-  email: "contato@nana.dev",
+  email: "fernandaguimaraes0202@gmail.com",
   localizacao: "Florianopolis, SC",
   disponivel: true,
   vamosConversar: () => {
@@ -91,8 +91,8 @@ export default contato;`;
   }, [fullText]);
 
   return (
-    <div className="glass-strong overflow-hidden rounded-[2rem] p-2 shadow-[var(--shadow-float)]">
-      <div className="overflow-hidden rounded-[1.6rem] bg-gradient-to-br from-[#fff5f8] via-white to-[#ffe4ef]">
+    <div className="glass-strong overflow-hidden rounded-[2rem] p-2 shadow-[shadow-float]">
+      <div className="overflow-hidden rounded-[1.6rem] bg-linear-to-br from-[#fff5f8] via-white to-[#ffe4ef]">
         {/* Window chrome */}
         <div className="flex items-center justify-between border-b border-pink-100/80 px-4 py-3">
           <div className="flex items-center gap-1.5">
@@ -115,9 +115,9 @@ export default contato;`;
               </span>
             ))}
           </span>
-          <code className="min-w-0 flex-1 whitespace-pre-wrap break-words">
+          <code className="min-w-0 flex-1 whitespace-pre-wrap wrap-break-words">
             <Highlighted text={typed} />
-            <span className="ml-0.5 inline-block h-[1.05em] w-[2px] translate-y-[3px] animate-pulse bg-pink-500" />
+            <span className="ml-0.5 inline-block h-[1.05em] w-0.5 translate-y-0.75 animate-pulse bg-pink-500" />
           </code>
         </pre>
 
