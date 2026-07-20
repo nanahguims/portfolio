@@ -20,7 +20,7 @@ function App() {
       <FloatingDecor />
       <Header />
       <main>
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
           <Routes>
             <Route path="/" element={<HomePage />} />
           </Routes>
