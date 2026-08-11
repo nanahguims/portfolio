@@ -3,6 +3,7 @@ import About from "../about/About";
 import Skils from "../skils/Skils";
 import Experience from "../experience/Experience";
 import Contact from "../contact/Contact";
+import { Projects } from "../projects/Projects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <About />
       <Skils />
+      <Projects />
       <Experience />
       <Contact />
     </section>

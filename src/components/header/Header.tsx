@@ -5,6 +5,7 @@ import { Heart, Menu, X } from "lucide-react";
 const NAV = [
   { id: "about", label: "Sobre" },
   { id: "skills", label: "Habilidades" },
+  { id: "projects", label: "Projetos" },
   { id: "experience", label: "Experiência" },
   { id: "contact", label: "Contato" },
 ];
@@ -30,10 +31,10 @@ export default function Header() {
         <a
           href="#top"
           className={`glass-strong flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all ${
-            scrolled ? "shadow-[var(--shadow-soft)]" : ""
+            scrolled ? "shadow-(--shadow-soft)" : ""
           }`}
         >
-          <span className="grid size-7 place-items-center rounded-full bg-gradient-to-br from-pink-300 to-fuchsia-400 text-white">
+          <span className="grid size-7 place-items-center rounded-full bg-linear-to-br from-pink-300 to-fuchsia-400 text-white">
             <Heart className="size-3.5" fill="currentColor" />
           </span>
           <span className="font-display font-light">Nanahguims</span>
