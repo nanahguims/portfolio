@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { CodeCard } from "./CodeCard";
 import { Download } from "lucide-react";
 import { Badge } from "../ui/badge";
-import Cv from "../../../public/cv_fernanda.pdf";
 
 export default function Banner() {
   return (
@@ -26,7 +25,11 @@ export default function Banner() {
           abaixo.
         </p>
         <div className="flex gap-2 mt-5">
-          <a target="_blank" href={Cv}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`${import.meta.env.BASE_URL}cv_fernanda.pdf`}
+          >
             <button className="flex gap-2 btn-primary rounded-full">
               <Download />
               Baixar currículo
