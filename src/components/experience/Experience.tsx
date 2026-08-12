@@ -1,5 +1,6 @@
 import { Badge } from "../ui/badge";
 import { motion } from "motion/react";
+import { SectionTitle } from "../ui/SectionTitle";
 
 const EXPERIENCE = [
   {
@@ -36,7 +37,7 @@ const EXPERIENCE = [
 export default function Skils() {
   return (
     <section id="experience" className="mt-40">
-      <h2 className="text-left mb-0 max-lg:text-4xl lg:mb-5">Experiência</h2>
+      <SectionTitle title="Experiência" />
       <div className="relative">
         <div className="absolute left-4 top-0 h-full w-px bg-linear-to-b from-pink-300 via-pink-200 to-transparent md:left-1/2" />
         {EXPERIENCE.map((c, i) => (

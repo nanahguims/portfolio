@@ -6,6 +6,7 @@ import festaJunina from "../../assets/festa-junina.png";
 import calculadora from "../../assets/calculadora.png";
 import desconto from "../../assets/desconto.png";
 import bellaNails from "../../assets/bellanails.png";
+import { Badge } from "../ui/badge";
 
 type Project = {
   title: string;
@@ -88,10 +89,9 @@ export function Projects() {
     <section id="projects" className="relative mt-40">
       <div className="mx-auto max-w-6xl">
         <SectionTitle
-          eyebrow="Projetos em destaque"
           title={
             <>
-              Projetinhos que <span className="text-gradient">desenvolvi</span>
+              <span className="text-gradient">Projetinhos </span> que desenvolvi
             </>
           }
           subtitle="Projetos que desenvolvi ao longo do tempo que me ajudaram a me aprimorar como profissional front-end."
@@ -176,8 +176,10 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
       </div>
 
       <div>
-        <div className="chip mb-3">{project.category}</div>
-        <h3 className="font-display text-3xl font-semibold sm:text-4xl">
+        <Badge className="mb-3" variant="secondary">
+          {project.category}
+        </Badge>
+        <h3 className="font-display text-3xl font-medium sm:text-4xl">
           {project.title}
         </h3>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -185,9 +187,9 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {project.tech.map((t) => (
-            <span key={t} className="chip">
+            <Badge variant="secondary" key={t}>
               {t}
-            </span>
+            </Badge>
           ))}
         </div>
         <div className="mt-7 flex flex-wrap gap-3">

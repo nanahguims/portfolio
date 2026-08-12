@@ -8,6 +8,7 @@ import {
   BookHeart,
 } from "lucide-react";
 import { motion } from "motion/react";
+import { SectionTitle } from "../ui/SectionTitle";
 
 const SKILLS = [
   {
@@ -53,7 +54,8 @@ const SKILLS = [
 export default function Skils() {
   return (
     <section id="skills" className="mt-40">
-      <h2 className="text-left mb-0 max-lg:text-4xl lg:mb-5">Tecnologias</h2>
+      <SectionTitle title="Tecnologias" />
+
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {SKILLS.map((c, i) => (
           <motion.div

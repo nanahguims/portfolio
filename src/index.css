@@ -56,7 +56,6 @@
   --cream: oklch(0.97 0.02 350); /* #FCE4EC */
   --rose: oklch(0.99 0.01 350); /* #FFF5F8 */
   --hotpink: oklch(0.68 0.22 355); /* #FF5FA2 */
-
   --background: oklch(0.99 0.01 350);
   --foreground: oklch(0.24 0.03 340); /* #2F2A32 */
   --card: oklch(1 0 0);
@@ -145,7 +144,6 @@
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 500;
-  background: color-mix(in oklab, var(--blush) 45%, white);
   color: oklch(0.35 0.08 350);
   border: 1px solid color-mix(in oklab, var(--hotpink) 18%, transparent);
 }
