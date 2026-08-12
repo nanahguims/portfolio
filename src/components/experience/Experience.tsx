@@ -36,7 +36,7 @@ const EXPERIENCE = [
 ];
 export default function Skils() {
   return (
-    <section id="experience" className="mt-40">
+    <section id="experience" className="mt-20 sm:mt-40">
       <SectionTitle title="Experiência" />
       <div className="relative">
         <div className="absolute left-4 top-0 h-full w-px bg-linear-to-b from-pink-300 via-pink-200 to-transparent md:left-1/2" />

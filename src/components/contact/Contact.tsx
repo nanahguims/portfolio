@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="mt-40 flex flex-col justify-center items-center gap-5"
+      className="mt-20 sm:mt-40 flex flex-col justify-center items-center gap-5"
     >
       <h2 className="text-left max-lg:text-4xl">Entre em contato</h2>
       <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">

@@ -86,7 +86,7 @@ export function Projects() {
   );
 
   return (
-    <section id="projects" className="relative mt-40">
+    <section id="projects" className="relative mt-20 sm:mt-40">
       <div className="mx-auto max-w-6xl">
         <SectionTitle
           title={

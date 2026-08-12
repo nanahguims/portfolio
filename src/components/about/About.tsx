@@ -38,10 +38,10 @@ const ABOUT_CARDS = [
 
 export default function About() {
   return (
-    <section id="about" className="mt-40">
+    <section id="about" className="mt-10 sm:mt-40">
       <div className="md:grid md:grid-cols-[1fr_3fr] flex flex-wrap items-center justify-center gap-10">
         <div className="flex flex-col items-center gap-2">
-          <img className="w-50" src={profileImage} alt="" />
+          <img className="w-60 sm:w-100" src={profileImage} alt="" />
           <Badge className="flex gap-2" variant={"secondary"}>
             <span className="size-2 rounded-full bg-pink-300"></span>
             Fernanda Guimarães
@@ -52,7 +52,7 @@ export default function About() {
           </Badge>
         </div>
         <div>
-          <h2 className="text-left mb-0 max-lg:text-4xl lg:mb-5">
+          <h2 className="text-left mb-0 max-lg:text-3xl lg:mb-5">
             Um pouco sobre mim
           </h2>
           <strong className="text-gradient">bio</strong>

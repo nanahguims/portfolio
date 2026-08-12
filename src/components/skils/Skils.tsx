@@ -53,9 +53,8 @@ const SKILLS = [
 
 export default function Skils() {
   return (
-    <section id="skills" className="mt-40">
+    <section id="skills" className="mt-20 sm:mt-40">
       <SectionTitle title="Tecnologias" />
-
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {SKILLS.map((c, i) => (
           <motion.div
